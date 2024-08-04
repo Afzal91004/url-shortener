@@ -9,7 +9,7 @@ const { connectToMongoDb } = require("./connection.js");
 const app = express();
 const PORT = 8001;
 
-connectToMongoDb("mongodb://127.0.0.1:27017/urlshortener")
+connectToMongoDb("mongodb://127.0.0.1:27017/url-shortener-app")
   .then(() => console.log("mongoDB connected"))
   .catch((err) => console.error(err));
 
